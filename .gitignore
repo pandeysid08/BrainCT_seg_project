@@ -1,0 +1,20 @@
+# Data — never commit patient/medical imaging data to a public repo
+data/images/*
+data/masks/*
+!data/images/.gitkeep
+!data/masks/.gitkeep
+
+# Training artifacts (checkpoints can be large; results are per-run)
+results/*.pt
+results/*.json
+results/*.csv
+!results/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Env / OS
+.env
+.DS_Store
